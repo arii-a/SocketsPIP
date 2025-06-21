@@ -43,4 +43,9 @@ public class Servidor extends Thread implements OnMessageListener {
     public void onMessage(Comando c) {
     }
 
+    public static void main(String[] args) throws IOException {
+    Servidor servidor = new Servidor();
+    servidor.start();
+}
+
 }
